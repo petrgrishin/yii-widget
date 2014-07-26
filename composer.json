@@ -9,6 +9,12 @@
     "require-dev": {
         "league/phpunit-coverage-listener": "~1.0"
     },
+    "repositories": [
+        {
+            "type": "git",
+            "url": "https://github.com/petrgrishin/yii-widget.git"
+        }
+    ],
     "authors": [
         {
             "name": "Petr Grishin",
