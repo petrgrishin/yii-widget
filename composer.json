@@ -1,0 +1,23 @@
+{
+    "name": "petrgrishin/yii-widget",
+    "description": "Interface widget for Yii",
+    "license": "MIT",
+    "require": {
+        "php": ">=5.3.0",
+        "yiisoft/yii": "*"
+    },
+    "require-dev": {
+        "league/phpunit-coverage-listener": "~1.0"
+    },
+    "authors": [
+        {
+            "name": "Petr Grishin",
+            "email": "petr.grishin@grishini.ru"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "PetrGrishin\\Widget\\": "src/"
+        }
+    }
+}
