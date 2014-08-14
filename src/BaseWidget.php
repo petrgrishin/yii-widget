@@ -17,15 +17,19 @@ abstract class BaseWidget extends CWidget implements Widget {
     }
 
     /**
+     * @throws \Exception
      * @return \PetrGrishin\View\View
      */
     public function getView() {
+        if (empty($this->view)) {
+            throw new \Exception('View is not set');
+        }
         return $this->view;
     }
 
     /**
      * @param \PetrGrishin\View\View $view
-     * @return $this
+     * @return static
      */
     public function setView($view) {
         $this->view = $view;
@@ -33,15 +37,19 @@ abstract class BaseWidget extends CWidget implements Widget {
     }
 
     /**
-     * @return mixed
+     * @throws \Exception
+     * @return string
      */
     public function getName() {
+        if (empty($this->name)) {
+            throw new \Exception('Name is not set');
+        }
         return $this->name;
     }
 
     /**
-     * @param mixed $name
-     * @return $this
+     * @param string $name
+     * @return static
      */
     public function setName($name) {
         $this->name = $name;
